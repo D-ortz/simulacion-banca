@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "usuario": "diego",
+    "password": "1234",
+    "saldo": 5000,
+    "beneficiarios": [
+      { "nombre": "Juan", "cuenta": "12345678" },
+      { "nombre": "María", "cuenta": "87654321" }
+    ],
+    "movimientos": [
+      { "tipo": "depósito", "monto": 3000, "fecha": "2025-06-01" },
+      { "tipo": "retiro", "monto": 1000, "fecha": "2025-06-03" }
+    ]
+  }
+]

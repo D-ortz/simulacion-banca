@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador Home Banking</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Login -->
+    <div id="loginSection">
+      <h1>Inicio de Sesión</h1>
+      <input type="text" id="username" placeholder="Usuario" value="diego"/>
+      <input type="password" id="password" placeholder="Contraseña" value="1234"/>
+      <button onclick="login()">Ingresar</button>
+    </div>
+
+    <!-- Panel principal -->
+    <div id="mainSection" style="display:none;">
+      <h2>Bienvenido, <span id="userNameDisplay"></span></h2>
+      <button onclick="mostrarSaldo()">Ver Saldo</button>
+      <button onclick="mostrarTransferencia()">Transferir</button>
+      <button onclick="mostrarAgregarBeneficiario()">Agregar Beneficiario</button>
+      <button onclick="mostrarDeposito()">Depositar</button>
+      <button onclick="mostrarRetiro()">Retirar</button>
+      <button onclick="mostrarHistorial()">Historial</button>
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
