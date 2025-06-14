@@ -79,6 +79,7 @@ function realizarTransferencia() {
     fecha: new Date().toISOString().split("T")[0]
   });
 
+  guardarDatosUsuario();
   Swal.fire("Éxito", `Transferiste $${monto} a ${beneficiario.nombre}`, "success");
   mostrarSaldo();
 }
